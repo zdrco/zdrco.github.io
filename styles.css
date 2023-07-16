@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color:  hsl(217, 54%, 11%);
+    color: white;
+}
+
+.card {
+    margin: 8rem auto auto auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.10) 5px 5px 5px, -5px 5px 5px rgba(0, 0, 0, 0.10);
+    background-color: hsl(216, 50%, 16%);
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: cyan;
+    width: 245px;
+    border-radius: 12px;
+}
+
+.view {
+    position: absolute;
+    top: 50;
+    left: 50;
+    opacity: 0;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+picture:hover .view,
+.view:hover {
+    opacity: 1;
+}
+
+.nft {
+    width: 245px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+picture:hover .nft {
+    opacity: 0.5;
+}
+
+
+
+
+p {
+    font-weight: 300;
+    font-size: 15px;
+    color: hsl(215, 25%, 60%);
+}
+
+header {
+    font-weight: 700;
+}
+
+h3 {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+h3:hover {
+    color:  hsl(178, 100%, 50%);
+    
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.eth {
+    display: flex;
+}
+
+.eth img {
+    object-fit: contain;
+    height: auto;
+    max-width: 100%;
+    margin-right: 7px;
+}
+
+.eth p {
+    font-weight: 700;
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    display: flex;
+}
+
+.time img {
+    object-fit: contain;
+    height: auto;
+    max-width: 100%;
+    margin-right: 7px;
+}
+
+.time p {
+    font-weight: 400;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: hsl(215, 32%, 27%)
+}
+
+.creator {
+    display: flex;
+
+    gap: 10px;
+}
+
+.creator img {
+    object-fit: contain;
+    height: 30px;
+    max-width: 15%;
+    margin-top: 8px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.creator span {
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.creator span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+
